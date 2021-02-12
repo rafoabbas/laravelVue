@@ -25,6 +25,8 @@
         "vue-template-compiler": "^2.6.10"
     },
     "dependencies": {
-        "element-ui": "^2.15.0"
+        "element-ui": "^2.15.0",
+        "vue-loading-overlay": "^3.4.2",
+        "vue-loading-spinner": "^1.0.11"
     }
 }
