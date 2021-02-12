@@ -109,12 +109,14 @@ export default {
       this.isLoading = true;
 
           axios.get('/api/home',{
-        params: this.search
+          params: this.search
       }).then(response => {
             this.homes = response.data.data;
             this.isLoading = false;
 
-          });
+          }).catch(res => function () {
+            this.isLoading = false;
+          })
     },
     searchFunc: function (){
       this.getHome();

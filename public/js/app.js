@@ -1962,6 +1962,10 @@ __webpack_require__.r(__webpack_exports__);
       }).then(function (response) {
         _this.homes = response.data.data;
         _this.isLoading = false;
+      })["catch"](function (res) {
+        return function () {
+          this.isLoading = false;
+        };
       });
     },
     searchFunc: function searchFunc() {
