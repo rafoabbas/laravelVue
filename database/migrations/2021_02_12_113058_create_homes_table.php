@@ -22,6 +22,7 @@ class CreateHomesTable extends Migration
             $table->integer('storeys');
             $table->integer('garages');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 
